@@ -1,0 +1,146 @@
+body {
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.main-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.header-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.question-card {
+  background: white;
+}
+
+.question-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+}
+
+.option-btn {
+  text-align: left;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.option-btn:hover {
+  border-color: #667eea;
+  background: #f8f9ff;
+  transform: translateX(5px);
+}
+
+.option-btn.selected {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.option-btn.correct {
+  background: #28a745;
+  color: white;
+  border-color: #28a745;
+}
+
+.option-btn.incorrect {
+  background: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
+
+.option-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.navigation-btn {
+  padding: 10px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  border: none;
+}
+
+.progress-info {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.score-badge {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+}
+
+.filter-section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.result-summary {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.result-summary h2 {
+  color: #667eea;
+  margin-bottom: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.stat-card {
+  padding: 15px;
+  border-radius: 10px;
+  background: #f8f9fa;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.search-box {
+  margin-bottom: 15px;
+}
+
+.skipped-badge {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.skipped-badge:hover {
+  transform: scale(1.1);
+}
+
+.badge.answered {
+  background-color: #6c757d !important;
+}
